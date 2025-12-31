@@ -2,21 +2,22 @@ const share = document.querySelector(".share");
 const bottomSection = document.querySelector(".bottom");
 const user = document.querySelector(".user");
 const avatar = document.querySelector(".avatar");
+const hoverContainer = document.querySelector(".hover-container");
 
 function hide() {
-  avatar.classList.add("invisible");
-  user.classList.add("invisible");
+  bottomSection.classList.add("invisible");
+  hoverContainer.classList.remove("invisible");
 }
 
-reveal = (() => {
-  avatar.classList.remove("invisible");
-  user.classList.remove("invisible");
-});
+reveal = () => {
+  bottomSection.classList.remove("invisible");
+  hoverContainer.classList.add("invisible");
+};
 
-share.addEventListener("mouseover", () => {
+share.addEventListener("mouseenter", () => {
   hide();
 });
 
-share.addEventListener("mouseleave", () => {
+hoverContainer.addEventListener("mouseleave", () => {
   reveal();
 });

@@ -103,15 +103,20 @@ video {
   cursor: pointer;
 }
 
-.link-container {
+.hover-container {
   background: hsl(217, 19%, 35%);
   display: flex;
-  gap: 3em;
+  gap: 1em;
   padding: 1em;
   align-items: center;
 }
 
-.link-container span {
+.link-container{
+  display: flex;
+  gap: 2em;
+}
+
+.hover-container span {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: hsl(212, 23%, 69%);
@@ -121,6 +126,8 @@ video {
   min-width: 25px;
   min-height: 25px;
 }
+
+
 
 .invisible {
   display: none;
