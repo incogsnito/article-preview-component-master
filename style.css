@@ -38,7 +38,6 @@ h2,
 h3,
 p {
   line-height: 1.3;
-  letter-spacing: 1.5;
 }
 
 p,
@@ -56,7 +55,7 @@ video {
 }
 
 .container {
-  width: clamp(200px, 50vw, 400px);
+  width: clamp(250px, 60vw, 450px);
   border-radius: 1em;
   box-shadow: var(--box-shadow-layered);
   overflow: hidden;
@@ -66,37 +65,61 @@ video {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 1em;
+  padding: 2em;
 }
-
 
 .main__header {
   font-size: (2rem, 2vw, 4rem);
   color: hsl(217, 19%, 35%);
 }
 
-.user{
-  display:flex;
+.user {
+  display: flex;
   flex-direction: column;
   gap: 0.2em;
+  color: hsl(217, 19%, 35%);
+}
+
+.username {
+  font-weight: bold;
 }
 
 .bottom {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 .avatar {
-  max-width: 4em;
+  max-width: 3em;
   border-radius: 50%;
 }
 
 .share {
   margin-left: auto;
   background: hsl(210, 46%, 95%);
-  padding: 0.55em;
+  padding: 1em;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.link-container {
+  background: hsl(217, 19%, 35%);
+  display: flex;
+  gap: 3em;
+  padding: 1em;
+  align-items: center;
+}
+
+.link-container span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(212, 23%, 69%);
+}
+
+.links img{
+  min-width: 25px;
+  min-height: 25px;
 }
 
 .invisible {
