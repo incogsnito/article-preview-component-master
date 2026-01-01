@@ -34,6 +34,10 @@ body {
   font-size: 13px;
 }
 
+li {
+  list-style-type: none;
+}
+
 h2,
 h3,
 p {
@@ -66,11 +70,18 @@ video {
   flex-direction: column;
   gap: 1em;
   padding: 2em;
+  position: relative;
 }
 
 .main__header {
   font-size: (2rem, 2vw, 4rem);
   color: hsl(217, 19%, 35%);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 
 .user {
@@ -84,51 +95,58 @@ video {
   font-weight: bold;
 }
 
+.avatar {
+  width: 3em;
+  border-radius: 50%;
+}
+
 .bottom {
   display: flex;
   align-items: center;
-  gap: 1em;
 }
 
-.avatar {
-  max-width: 3em;
+.btn {
+  margin-inline-start: auto;
   border-radius: 50%;
-}
-
-.share {
-  margin-left: auto;
-  background: hsl(210, 46%, 95%);
+  border: none;
   padding: 1em;
-  border-radius: 50%;
   cursor: pointer;
 }
 
-.hover-container {
+.link-img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn:hover {
+  background: hsl(212, 23%, 69%);
+}
+
+.share {
+  display: none;
+}
+
+.bottom.active {
   background: hsl(217, 19%, 35%);
+
+}
+.bottom.active .share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+}
+
+.bottom.active .default {
+  display: none;
+}
+
+.share span {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.link-container {
   display: flex;
   gap: 1em;
-  padding: 1em;
-  align-items: center;
-}
-
-.link-container{
-  display: flex;
-  gap: 2em;
-}
-
-.hover-container span {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: hsl(212, 23%, 69%);
-}
-
-.links img{
-  min-width: 25px;
-  min-height: 25px;
-}
-
-
-
-.invisible {
-  display: none;
 }
