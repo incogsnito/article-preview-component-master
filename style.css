@@ -78,6 +78,10 @@ video {
   color: hsl(217, 19%, 35%);
 }
 
+.article.active{
+  margin-block-end: 4em;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -103,6 +107,7 @@ video {
 .bottom {
   display: flex;
   align-items: center;
+  
 }
 
 .btn {
@@ -126,9 +131,15 @@ video {
   display: none;
 }
 
+
 .bottom.active {
   background: hsl(217, 19%, 35%);
-
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  padding: 1em;
+  z-index: 1;
 }
 .bottom.active .share {
   display: flex;
