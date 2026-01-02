@@ -59,7 +59,8 @@ video {
 }
 
 .container {
-  width: clamp(300px, 60vw, 450px);
+  width: clamp(300px, 60vw, 400px);
+  min-width: 300px;
   border-radius: 1em;
   box-shadow: var(--box-shadow-layered);
   overflow: hidden;
@@ -182,3 +183,4 @@ video {
 
   }
 }
+
